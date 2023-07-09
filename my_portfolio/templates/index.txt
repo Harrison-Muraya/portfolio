@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        /* Reset default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .logo a {
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation styles */
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        ul li {
+            margin-left: 10px;
+        }
+
+        ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="{% url 'profile' %}">HARRISON</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="{% url 'education' %}">Education</a></li>
+                <li><a href="{% url 'profession' %}">Profesion</a></li>
+                <li><a href="{% url 'experience' %}">Experience</a></li>
+                <li><a href="{% url 'skills' %}">skills</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuContainer = document.querySelector('.menu-container');
+
+        menuToggle.addEventListener('click', function() {
+            menuContainer.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

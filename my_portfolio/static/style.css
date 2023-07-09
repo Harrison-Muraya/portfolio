@@ -1,0 +1,45 @@
+body {
+    background-image: url('images/DSC_0616.jpg');
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: #9390a7;
+    margin: 0px;
+    
+   
+}
+div {
+
+}
+p{
+    
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 10px;
+
+}
+li{
+    list-style: none;
+}
+
+h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:5%;
+    letter-spacing:.2em;
+    word-spacing:-.1em;
+    line-height: normal;
+    line-break:unset;
+    border-bottom: solid #fff 2px ;
+    border-bottom-style: outset;
+    width: 100%;
+}
+.navbar {
+    
+}
