@@ -5,14 +5,14 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <!-- Bootstrap CSS -->
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"-->
     <title>Home Page</title>
     
 </head>
 <body>
-    <nav class="navbar ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-clear fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{% url 'profile' %}">HARRISON</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +42,7 @@
             </div>
         </div>
     </nav>
+    
 
     <div class="container">
         {% block content %}
@@ -49,6 +50,6 @@
     </div>
 
     <!-- Bootstrap JS (Place it at the end of the body) -->
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
