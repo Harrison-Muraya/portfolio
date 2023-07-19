@@ -3,13 +3,14 @@
 {% block title %}Create an account{% endblock %}
 
 {% block content %}
+<br>	<br>
 <div class="container top 60px", id="form" >
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <form action="" method="POST" class="form-group">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-success">Register</button>
+                <button type="submit" class="btn btn-success">Register to view my images</button>
             </form>
         </div>
     </div>
