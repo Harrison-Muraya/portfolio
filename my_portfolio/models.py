@@ -9,5 +9,5 @@ class Users(models.Model):
     time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.firstname, self.lastname, self.email, self.contact,self.time
+        return self.firstname
   
