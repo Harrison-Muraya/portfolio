@@ -15,6 +15,9 @@ body {
 div{
     
 }
+#container{
+    position: fixed;
+}
 p{
     
     color: rgb(255, 255, 255);
@@ -45,6 +48,10 @@ h2{
     border-bottom: solid #fff 2px ;
     border-bottom-style: outset;
     width: 100%;
+}
+h3{
+    color: rgba(43, 146, 6, 0.984);
+    text-shadow: #9390a7;
 }
 #form{
     position: relative;
